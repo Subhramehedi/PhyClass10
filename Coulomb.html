@@ -74,13 +74,13 @@
 <body>
   <h1>Coulomb's Law Interactive Simulation</h1>
   <div class="container">
-    <label>q1 (μC): <span id="q1Val">1</span></label><br>
+    <label>q1 (C): <span id="q1Val">1</span></label><br>
     <input type="range" id="q1" min="-10" max="10" value="1" step="0.1"><br>
 
-    <label>q2 (μC): <span id="q2Val">1</span></label><br>
+    <label>q2 (C): <span id="q2Val">1</span></label><br>
     <input type="range" id="q2" min="-10" max="10" value="1" step="0.1"><br>
 
-    <label>Distance (cm): <span id="rVal">5</span></label><br>
+    <label>Distance (m): <span id="rVal">5</span></label><br>
     <input type="range" id="r" min="1" max="20" value="5" step="0.1"><br>
 
     <button class="simulate-button" onclick="showInteraction()">Show Interaction</button>
@@ -112,9 +112,9 @@
     const direction = document.getElementById("direction");
 
     function update() {
-      const q1C = parseFloat(q1.value) * 1e-6;
-      const q2C = parseFloat(q2.value) * 1e-6;
-      const dist = parseFloat(r.value) / 100;
+      const q1C = parseFloat(q1.value) ;
+      const q2C = parseFloat(q2.value) ;
+      const dist = parseFloat(r.value);
 
       q1Val.textContent = q1.value;
       q2Val.textContent = q2.value;
