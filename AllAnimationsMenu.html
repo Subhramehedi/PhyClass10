@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>তড়িৎ অ্যানিমেশন মেনু</title>
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 {
+      font-size: 2.5rem;
+      background: linear-gradient(45deg, #4CAF50, #2196F3);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 30px;
+    }
+    .button-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      width: 100%;
+      max-width: 1000px;
+    }
+    .sim-button {
+      padding: 20px;
+      font-size: 1.2rem;
+      background: linear-gradient(45deg, #673AB7, #512DA8);
+      color: white;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(255,255,255,0.05);
+    }
+    .sim-button:hover {
+      transform: translateY(-5px);
+      background: linear-gradient(45deg, #9575CD, #7E57C2);
+      box-shadow: 0 0 20px rgba(255,255,255,0.2);
+    }
+    .back-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      padding: 10px 18px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 10px;
+      background: #4CAF50;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+      z-index: 1000;
+    }
+    .back-button:hover {
+      background: #43A047;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>তড়িৎ বিষয়ক অ্যানিমেশন তালিকা</h1>
+  <div class="button-grid">
+    <button class="sim-button" onclick="location.href='Coulomb.html'">কুলম্বের সূত্র</button>
+    <button class="sim-button" onclick="location.href='Current.html'">তড়িৎ প্রবাহ</button>
+    <button class="sim-button" onclick="location.href='Potential.html'">বিভব পার্থক্য</button>
+    <button class="sim-button" onclick="location.href='Ohm.html'">ওহমের সূত্র (V-I গ্রাফ)</button>
+    <button class="sim-button" onclick="location.href='Resistance.html'">রোধের জল প্রবাহ রূপক</button>
+    <button class="sim-button" onclick="location.href='HeatingSeries.html'">জুলের সূত্র: শ্রেণী সংযোগ</button>
+    <button class="sim-button" onclick="location.href='HeatingParallel.html'">জুলের সূত্র: সমান্তরাল সংযোগ</button>
+    <button class="sim-button" onclick="location.href='Mindmap.html'">🔍 মাইন্ড ম্যাপ</button>
+  </div>
+</body>
+</html>
